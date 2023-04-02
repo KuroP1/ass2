@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    height: 100vh;
+    width: 100vw;
+    /* Updated to grey */
+}
+
+
+/* Add styles for the thumbnail container */
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+/* Add styles for the thumbnail images */
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    margin: 0 5px;
+    transition: opacity 0.3s ease;
+}
+
+.whole-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Add styles for the active thumbnail */
+
+.thumbnail.active {
+    opacity: 1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    margin: -1px 4px;
+}
+
+.image-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+    border: 0.5px solid grey;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid grey;
+    margin-right: 20px;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid grey;
+    margin-left: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow-left:hover {
+    border-right: 10px solid red;
+    opacity: 0.8;
+}
+
+.arrow-right:hover {
+    border-left: 10px solid red;
+    opacity: 0.5;
+}
+
+img {
+    object-fit: cover;
+}
+
+.description-box {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust to position the description box above the padding */
+    left: 10px;
+    /* Adjust to position the description box within the padding */
+    right: 10px;
+    /* Adjust to position the description box within the padding */
+    padding: 8px 16px;
+    /* Adjust padding for the description box */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background (50% opacity) */
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
